@@ -1,0 +1,13 @@
+dataset: fashion_mnist
+model: cnn_shallow
+subset_size: 2000
+n_epochs: 80
+n_seeds: 5
+seeds: [42, 123, 456, 789, 1024]
+batch_size: 256
+lr: 0.001
+bottleneck_dim: 32
+dropout: 0.0
+tda_max_points: 500
+bootstrap_epochs: [1, 10, 20, 40, 60, 80]
+n_bootstrap: 10

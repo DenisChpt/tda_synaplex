@@ -1,0 +1,28 @@
+[project]
+name = "tda-synaplex"
+version = "0.1.0"
+description = "TDA experiments and analysis using Synaplex"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "pyyaml>=6.0",
+    "synaplex",
+]
+
+# --- PyTorch index (uncomment the one matching your hardware) ---
+# By default, installs CPU-only PyTorch from PyPI.
+# For GPU support, uncomment the appropriate index below.
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
+
+# AMD (ROCm 7.1):
+# [[tool.uv.index]]
+# url = "https://download.pytorch.org/whl/rocm7.1"
+
+# NVIDIA (CUDA 12.8):
+# [[tool.uv.index]]
+# url = "https://download.pytorch.org/whl/cu128"
